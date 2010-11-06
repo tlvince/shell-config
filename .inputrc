@@ -6,4 +6,5 @@ $if mode=vi
     set keymap vi-insert
     "\e[A": history-search-backward
     "\e[B": history-search-forward
+    "\C-l": clear-screen
 $endif
