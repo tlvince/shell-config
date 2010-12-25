@@ -1,0 +1,36 @@
+# .aliases: create or redefine commands.
+# Copyright 2010 Tom Vincent <http://www.tlvince.com/contact>
+
+# Overrides
+alias ls='ls -h --color=auto'
+alias df='df -h'
+alias du='du -hc'
+alias htop='htop -u $(whoami) --sort-key PERCENT_MEM'
+alias poweroff='sudo poweroff'
+alias reboot='sudo reboot'
+alias s2ram='sudo s2ram -f'
+alias s2disk='sudo s2disk'
+alias net-profile='sudo net-profile'
+alias free='free -m'
+alias iftop='sudo iftop -i eth1'
+alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
+alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
+alias visudo="sudo EDITOR=vim visudo"
+
+# Package management
+alias repkg='makepkg -efi'
+alias update='sudo pacman -Syu && aurget -Syu'
+alias uninstall='sudo pacman -Rsn'
+alias funinstall='sudo pacman -Rsnd'
+alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
+
+# Shortcuts
+alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" &&
+          echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
+alias iplayer='get_iplayer --nopurge'
+alias iplayerd='iplayer --tvmode=flashhd,flashvhigh,flashnormal --get '
+alias iplayers='sh ~/src/bash/iplayer-stream.sh'
+alias mpdlocal='/usr/bin/mpd ~/.mpd/local/local.conf &&
+        mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
+alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
+alias acp='rsync -aP'
