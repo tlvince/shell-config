@@ -1,0 +1,4 @@
+# Global
+. "$XDG_CONFIG_HOME/shell/aliases"
+. "$XDG_CONFIG_HOME/shell/exports"
+. "/etc/profile.d/autojump.sh"
