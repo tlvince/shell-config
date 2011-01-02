@@ -12,4 +12,4 @@ export BROWSER="chromium"
 # History
 export HISTCONTROL="erasedups"
 export HISTSIZE="1000"
-export HISTFILESIZE="10000"
+export HISTFILESIZE="1000"
