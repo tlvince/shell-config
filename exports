@@ -12,4 +12,6 @@ export BROWSER="chromium"
 # History
 export HISTCONTROL="erasedups"
 export HISTSIZE="1000"
+export SAVEHIST="1000"
 export HISTFILESIZE="1000"
+export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/history"
