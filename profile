@@ -1,12 +1,15 @@
 # profile: sourced by the login shell.
 
-alsactl -f ~/.config/alsa/state restore
+[[ -f ~/.config/alsa/state ]] && {
+    alsactl -f ~/.config/alsa/state restore
+}
+. "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
 if [[ -z "$DISPLAY" ]]; then
     case $(tty) in
         /dev/tty1)
             # Fix login security hole (^c)
-            startx &
+            startx &!
             logout
         ;;
         /dev/tty2)
