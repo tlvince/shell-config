@@ -18,8 +18,12 @@ if [[ -z "$DISPLAY" ]]; then
             logout
         ;;
         *)
+            # If we're SSH'ed, attach to a running tmux session or start a fresh
             if [[ -n $SSH_TTY ]]; then
-                tmux has && tmux attach || tmux new
+                if [[ -z $TMUX ]]; then
+                    tmux has && tmux attach || tmux new
+                    logout
+                fi
             fi
     esac
 fi
