@@ -1,9 +1,10 @@
 # profile: sourced by the login shell.
 
+. "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
+
 [[ -f ~/.config/alsa/state ]] && {
     alsactl -f ~/.config/alsa/state restore
 }
-. "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
 if [[ -z "$DISPLAY" ]]; then
     case $(tty) in
@@ -16,5 +17,9 @@ if [[ -z "$DISPLAY" ]]; then
             tmux
             logout
         ;;
+        *)
+            if [[ -n $SSH_TTY ]]; then
+                tmux has && tmux attach || tmux new
+            fi
     esac
 fi
