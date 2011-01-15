@@ -5,7 +5,7 @@
 alias ls='ls -h --color=auto'
 alias df='df -h'
 alias du='du -hc'
-alias htop='htop -u $(whoami) --sort-key PERCENT_MEM'
+alias htop='htop -u $(whoami)'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
 alias s2ram='sudo s2ram -f'
@@ -30,7 +30,6 @@ alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" &&
 alias iplayer='get_iplayer --nopurge'
 alias iplayerd='iplayer --tvmode=flashhd,flashvhigh,flashnormal --get '
 alias iplayers='sh ~/src/bash/iplayer-stream.sh'
-alias mpdlocal='/usr/bin/mpd ~/.mpd/local/local.conf &&
-        mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
+alias mpdlocal='/usr/bin/mpd && mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
 alias acp='rsync -aP'
