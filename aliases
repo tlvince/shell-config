@@ -1,5 +1,5 @@
 # .aliases: create or redefine commands.
-# Copyright 2010 Tom Vincent <http://www.tlvince.com/contact/>
+# Copyright 2010-11 Tom Vincent <http://www.tlvince.com/contact/>
 
 # Overrides
 alias ls='ls -h --color=auto'
@@ -16,6 +16,7 @@ alias iftop='sudo iftop -i eth0'
 alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
 alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
 alias visudo="sudo EDITOR=vim visudo"
+alias vim='vim -u "$XDG_CONFIG_HOME/vim/vimrc"'
 
 # Package management
 alias repkg='makepkg -efi'
@@ -27,9 +28,6 @@ alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 # Shortcuts
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" &&
           echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
-alias iplayer='get_iplayer --nopurge'
-alias iplayerd='iplayer --tvmode=flashhd,flashvhigh,flashnormal --get '
-alias iplayers='sh ~/src/bash/iplayer-stream.sh'
 alias mpdlocal='/usr/bin/mpd && mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
 alias acp='rsync -aP'

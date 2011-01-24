@@ -1,4 +1,6 @@
-# Global
+# imports: source files here that should be imported by all shells.
+# Copyright 2011 Tom Vincent <http://www.tlvince.com/contact/>
+
 . "$XDG_CONFIG_HOME/shell/aliases"
 . "$XDG_CONFIG_HOME/shell/exports"
 . "/etc/profile.d/autojump.sh"
