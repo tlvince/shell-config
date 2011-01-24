@@ -12,7 +12,7 @@ alias s2ram='sudo s2ram -f'
 alias s2disk='sudo s2disk'
 alias net-profile='sudo net-profile'
 alias free='free -m'
-alias iftop='sudo iftop -i eth1'
+alias iftop='sudo iftop -i eth0'
 alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
 alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
 alias visudo="sudo EDITOR=vim visudo"
@@ -33,3 +33,4 @@ alias iplayers='sh ~/src/bash/iplayer-stream.sh'
 alias mpdlocal='/usr/bin/mpd && mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
 alias acp='rsync -aP'
+alias sudu='sudo -iu'
