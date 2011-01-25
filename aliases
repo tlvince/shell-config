@@ -16,7 +16,6 @@ alias iftop='sudo iftop -i eth0'
 alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
 alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
 alias visudo="sudo EDITOR=vim visudo"
-alias vim='vim -u "$XDG_CONFIG_HOME/vim/vimrc"'
 
 # Package management
 alias repkg='makepkg -efi'

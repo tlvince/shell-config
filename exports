@@ -8,6 +8,7 @@ export VISUAL="vim"
 export OOO_FORCE_DESKTOP="gnome"
 export DESKTOP_SESSION="xmonad"
 export BROWSER="chromium-browser"
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 # History
 export HISTCONTROL="erasedups"
