@@ -17,6 +17,7 @@ alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
 alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
 alias visudo="sudo EDITOR=vim visudo"
 alias diff="colordiff -u"
+alias gpg="gpg --use-agent"
 
 # Package management
 alias repkg='makepkg -efi'
