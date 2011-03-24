@@ -8,6 +8,9 @@ done
 
 . "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
+# Start gpg-agent at login. Child shells inherit the environment variables.
+. "/etc/profile.d/gpg-agent.sh"
+
 [[ -f ~/.config/alsa/state ]] && {
     alsactl -f ~/.config/alsa/state restore
 }
