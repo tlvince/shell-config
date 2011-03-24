@@ -6,10 +6,12 @@
 # Start gpg-agent at login. Interactive shells inherit the environment variables
 . "/etc/profile.d/gpg-agent.sh"
 
+# Restore volume levels
 [[ -f ~/.config/alsa/state ]] && {
     alsactl -f ~/.config/alsa/state restore
 }
 
+# Launch X or tmux depending on the tty
 if [[ -z "$DISPLAY" ]]; then
     case $(tty) in
         /dev/tty1)
