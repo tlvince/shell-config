@@ -1,11 +1,6 @@
 # profile: sourced by the login shell.
 # Copyright 2009-11 Tom Vincent <http://www.tlvince.com/contact/>
 
-XDG=(.local/share .config .cache)
-for i in $XDG; do
-    [[ ! -d "$HOME/$i" ]] && mkdir -p "$HOME/$i"
-done
-
 . "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
 # Start gpg-agent at login. Interactive shells inherit the environment variables
