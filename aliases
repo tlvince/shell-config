@@ -36,6 +36,7 @@ alias acp='rsync -aP'
 alias sudu='sudo -iu'
 alias pu='pushd'
 alias po='popd'
+alias xo='xclip -o'
 
 # Single character {{{2
 # j: reserved for autojump
