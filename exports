@@ -1,7 +1,8 @@
-# .exports: global environment variables.
-# Copyright 2010 Tom Vincent <http://www.tlvince.com/contact/>
+# .exports: global environment variables. {{{1
+# Copyright 2010-2011 Tom Vincent <http://www.tlvince.com/contact/>
+# vim: set fdm=marker:
 
-# Environment
+# Environment {{{1
 export PATH="$HOME/bin:$PATH"
 export EDITOR="vim"
 export VISUAL="vim"
@@ -12,8 +13,7 @@ export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
     -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 
-
-# History
+# History {{{1
 export HISTCONTROL="erasedups"
 export HISTSIZE="10000"
 export SAVEHIST="10000"
