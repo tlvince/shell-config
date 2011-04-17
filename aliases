@@ -1,7 +1,7 @@
-# .aliases: create or redefine commands.
+# .aliases: create or redefine commands. {{{1
 # Copyright 2010-11 Tom Vincent <http://www.tlvince.com/contact/>
-
-# Overrides
+# vim: set fdm=marker:
+# Overrides {{{1
 alias ls='ls -h --color=auto'
 alias df='df -h'
 alias du='du -hc'
@@ -19,7 +19,7 @@ alias visudo='sudo EDITOR=vim visudo'
 alias diff='colordiff -u'
 alias gpg='gpg --use-agent'
 
-# Package management
+# Package management {{{1
 alias repkg='makepkg -efi'
 alias pacman='sudo pacman'
 alias update='pacman -Syu && aurget -Syu'
@@ -28,7 +28,7 @@ alias uninstall='pacman -Rsn'
 alias funinstall='pacman -Rsnd'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
-# Shortcuts
+# Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
 alias mpdlocal='/usr/bin/mpd && mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
@@ -37,6 +37,7 @@ alias sudu='sudo -iu'
 alias pu='pushd'
 alias po='popd'
 
-## Single character
+# Single character {{{2
+# j: reserved for autojump
 alias l='ls -lA'
 alias g='git'
