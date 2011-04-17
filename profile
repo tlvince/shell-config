@@ -1,17 +1,17 @@
 # profile: sourced by the login shell.
 # Copyright 2009-11 Tom Vincent <http://www.tlvince.com/contact/>
 
-XDG=(.local/share .config .cache)
-for i in $XDG; do
-    [[ ! -d "$HOME/$i" ]] && mkdir -p "$HOME/$i"
-done
-
 . "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
+# Start gpg-agent at login. Interactive shells inherit the environment variables
+. "/etc/profile.d/gpg-agent.sh"
+
+# Restore volume levels
 [[ -f ~/.config/alsa/state ]] && {
     alsactl -f ~/.config/alsa/state restore
 }
 
+# Launch X or tmux depending on the tty
 if [[ -z "$DISPLAY" ]]; then
     case $(tty) in
         /dev/tty1)

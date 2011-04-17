@@ -13,24 +13,30 @@ alias s2disk='sudo s2disk'
 alias net-profile='sudo net-profile'
 alias free='free -m'
 alias iftop='sudo iftop -i eth0'
-alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
-alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
-alias visudo="sudo EDITOR=vim visudo"
+alias mutt='mutt -F $XDG_CONFIG_HOME/mutt/muttrc'
+alias offlineimap='offlineimap -c ~/.config/offlineimap/offlineimap.conf -o'
+alias visudo='sudo EDITOR=vim visudo'
+alias diff='colordiff -u'
+alias gpg='gpg --use-agent'
 
 # Package management
 alias repkg='makepkg -efi'
-alias update='sudo pacman -Syu && aurget -Syu'
-alias uninstall='sudo pacman -Rsn'
-alias funinstall='sudo pacman -Rsnd'
+alias pacman='sudo pacman'
+alias update='pacman -Syu && aurget -Syu'
+alias pinstall='pacman -S'
+alias uninstall='pacman -Rsn'
+alias funinstall='pacman -Rsnd'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
 # Shortcuts
-alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" &&
-          echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
+alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
 alias mpdlocal='/usr/bin/mpd && mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
 alias acp='rsync -aP'
 alias sudu='sudo -iu'
-alias l='ls -lA'
 alias pu='pushd'
 alias po='popd'
+
+## Single character
+alias l='ls -lA'
+alias g='git'

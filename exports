@@ -9,10 +9,13 @@ export OOO_FORCE_DESKTOP="gnome"
 export DESKTOP_SESSION="xmonad"
 export BROWSER="chromium-browser"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+    -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+
 
 # History
 export HISTCONTROL="erasedups"
-export HISTSIZE="1000"
-export SAVEHIST="1000"
-export HISTFILESIZE="1000"
+export HISTSIZE="10000"
+export SAVEHIST="10000"
+export HISTFILESIZE="10000"
 export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/history"
