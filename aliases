@@ -30,7 +30,7 @@ alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
-alias mpdlocal='/usr/bin/mpd ~/.mpd/local.conf && \
+alias mpdlocal='/usr/bin/mpd "$XDG_CONFIG_HOME/mpd/local.conf" && \
     mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
 alias acp='rsync -aP'
