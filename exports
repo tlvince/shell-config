@@ -12,6 +12,8 @@ export BROWSER="chromium-browser"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
     -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+export PAGER=less
+export READNULLCMD=$PAGER   # Zsh's "< file" built-in pager
 
 # History {{{1
 export HISTCONTROL="erasedups"
