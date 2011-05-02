@@ -39,6 +39,7 @@ alias pu='pushd'
 alias po='popd'
 alias xo='xclip -o'
 alias ..='cd ..'
+alias nosy='nosier -w "*.py" "nosetests -xs"'
 
 # Single character {{{2
 # j: reserved for autojump
