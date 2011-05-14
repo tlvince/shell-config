@@ -4,7 +4,7 @@
 . "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
 # Start gpg-agent at login. Interactive shells inherit the environment variables
-. "/etc/profile.d/gpg-agent.sh"
+. "$HOME/proj/src/bash/launchers/gpg-agent"
 
 # Restore volume levels
 [[ -f ~/.config/alsa/state ]] && {
