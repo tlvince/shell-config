@@ -45,3 +45,5 @@ alias nosy='nosier -w "*.py" "nosetests -xs"'
 # j: reserved for autojump
 alias l='ls -lA'
 alias g='git'
+alias m='mutt'
+alias n='newsbeuter -q'
