@@ -33,17 +33,18 @@ alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
 alias mpdlocal='/usr/bin/mpd "$XDG_CONFIG_HOME/mpd/local.conf" && \
     mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
-alias acp='rsync -aP'
+alias acp='rsync -a --partial-dir=".rsync-partial" --progress'
 alias sudu='sudo -iu'
 alias pu='pushd'
 alias po='popd'
 alias xo='xclip -o'
 alias ..='cd ..'
 alias nosy='nosier -w "*.py" "nosetests -xs"'
+alias ted='logvid "/media/ears/video/ted"'
 
 # Single character {{{2
 # j: reserved for autojump
 alias l='ls -lA'
 alias g='git'
-alias m='mutt'
+alias m='mutt -z'
 alias n='newsbeuter -q'
