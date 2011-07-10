@@ -22,7 +22,7 @@ alias gpg='gpg --use-agent'
 # Package management {{{1
 alias repkg='makepkg -efi'
 alias pacman='sudo pacman'
-alias update='pacman -Syu && aurget -Syu && sudo hostsman -u'
+alias update='pacman -Syu; aurget -Syu; sudo hostsman -u'
 alias pinstall='pacman -S'
 alias uninstall='pacman -Rsn'
 alias funinstall='pacman -Rsnd'
