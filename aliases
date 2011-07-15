@@ -17,7 +17,6 @@ alias mutt='mutt -F $XDG_CONFIG_HOME/mutt/muttrc'
 alias offlineimap='offlineimap -c ~/.config/offlineimap/offlineimap.conf -o'
 alias visudo='sudo EDITOR=vim visudo'
 alias diff='colordiff -u'
-alias gpg='gpg --use-agent'
 alias msmtp='msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc'
 
 # Package management {{{1
