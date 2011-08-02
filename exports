@@ -14,6 +14,7 @@ export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
     -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 export PAGER=less
 export READNULLCMD=$PAGER   # Zsh's "< file" built-in pager
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0" # Digikam/QGtkStyle
 
 # History {{{1
 export HISTCONTROL="erasedups"
