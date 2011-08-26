@@ -16,7 +16,7 @@ if [[ -z "$DISPLAY" ]]; then
     case $(tty) in
         /dev/tty1)
             # Fix login security hole (^c)
-            startx &!
+            xinit -- /usr/bin/X -nolisten tcp &!
             logout
         ;;
         /dev/tty2)
