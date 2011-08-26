@@ -19,6 +19,7 @@ alias visudo='sudo EDITOR=vim visudo'
 alias diff='colordiff -u'
 alias msmtp='msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc'
 alias motion='motion -c $XDG_CONFIG_HOME/motion/motion.conf'
+alias cclive='cclive -f best'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
@@ -42,6 +43,7 @@ alias xo='xclip -o'
 alias ..='cd ..'
 alias nosy='nosier -w "*.py" "nosetests -xs"'
 alias ted='logvid -f "~/dwn/video/ted-top.m3u"'
+alias webcam='mplayer tv:// -tv device=/dev/video0 -vf screenshot'
 
 # Single character {{{2
 # j: reserved for autojump
