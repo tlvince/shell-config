@@ -1,10 +1,17 @@
-# profile: sourced by the login shell.
+# profile: sourced by the login shell. {{{1
 # Copyright 2009-11 Tom Vincent <http://www.tlvince.com/contact/>
+# vim: set fdm=marker
 
+# Helper functions. {{{1
+
+# Is $1 installed?
+_have() { which "$1" &>/dev/null; }
+
+# Main. {{{1
 . "$XDG_CONFIG_HOME/shell/zsh/.zshrc"
 
 # Start {ssh,gpg}-agent
-eval $(keychain --eval --quiet)
+_have keychain && eval $(keychain --eval --quiet)
 
 # Launch X or tmux depending on the tty
 if [[ -z "$DISPLAY" ]]; then
@@ -21,9 +28,11 @@ if [[ -z "$DISPLAY" ]]; then
         *)
             # If we're SSH'ed, attach to a running tmux session or start a fresh
             if [[ -n $SSH_TTY ]]; then
-                if [[ -z $TMUX ]]; then
-                    tmux has && tmux attach || tmux new
-                    logout
+                if _have tmux; then 
+                    if [[ -z $TMUX ]]; then
+                        tmux has && tmux attach || tmux new
+                        logout
+                    fi
                 fi
             fi
     esac
