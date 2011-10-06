@@ -26,8 +26,11 @@ if [[ -z "$DISPLAY" ]]; then
             logout
         ;;
         *)
-            # If we're SSH'ed, attach to a running tmux session or start a fresh
             if [[ -n $SSH_TTY ]]; then
+                # Not all systems have rxvt-unicode
+                TERM=xterm-color
+
+                # If we're SSH'ed, attach to a running tmux session or start a fresh
                 if _have tmux; then 
                     if [[ -z $TMUX ]]; then
                         tmux has 2>/dev/null && tmux attach || tmux new
