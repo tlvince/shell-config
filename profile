@@ -30,7 +30,7 @@ if [[ -z "$DISPLAY" ]]; then
             if [[ -n $SSH_TTY ]]; then
                 if _have tmux; then 
                     if [[ -z $TMUX ]]; then
-                        tmux has && tmux attach || tmux new
+                        tmux has 2>/dev/null && tmux attach || tmux new
                         logout
                     fi
                 fi
