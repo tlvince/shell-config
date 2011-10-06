@@ -1,5 +1,5 @@
 # profile: sourced by the login shell. {{{1
-# Copyright 2009-11 Tom Vincent <http://www.tlvince.com/contact/>
+# Copyright 2009-11 Tom Vincent <http://tlvince.com/contact/>
 # vim: set fdm=marker
 
 # Helper functions. {{{1
