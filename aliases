@@ -20,6 +20,7 @@ alias diff='colordiff -u'
 alias msmtp='msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc'
 alias motion='motion -c $XDG_CONFIG_HOME/motion/motion.conf'
 alias cclive='cclive -f best'
+alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
@@ -34,7 +35,7 @@ alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
 alias mpdlocal='/usr/bin/mpd "$XDG_CONFIG_HOME/mpd/local.conf" && \
     mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
-alias myip='echo $(curl -s http://tlvince.com/sandbox/ip.php)'
+alias myip='echo $(curl --silent http://tnx.nl/ip)'
 alias acp='rsync -a --partial-dir=".rsync-partial" --progress'
 alias sudu='sudo -iu'
 alias pu='pushd'
