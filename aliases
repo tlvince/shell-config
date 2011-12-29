@@ -25,10 +25,10 @@ alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
 # Package management {{{1
 alias repkg='makepkg -efi'
 alias pacman='sudo pacman'
-alias update='pacman -Syu; aurget -Syu; sudo hostsman -u'
+alias update='pacman -Syu; sh ~/src/bash/post-update.sh'
 alias pinstall='pacman -S'
 alias uninstall='pacman -Rsn'
-alias funinstall='pacman -Rsnd'
+alias funinstall='pacman -Rsndd'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
 # Shortcuts {{{1
@@ -44,6 +44,7 @@ alias ..='cd ..'
 alias nosy='nosier -w "*.py" "nosetests -xs"'
 alias ted='logvid -f "~/dwn/video/ted-top.m3u"'
 alias webcam='mplayer tv:// -tv device=/dev/video0 -vf screenshot'
+alias py='python'
 
 # Single character {{{2
 # j: reserved for autojump
