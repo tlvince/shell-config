@@ -5,4 +5,4 @@
 # Imports. {{{1
 . "$XDG_CONFIG_HOME/shell/aliases"
 . "$XDG_CONFIG_HOME/shell/exports"
-[ -f "/etc/profile.d/autojump.sh" ] && . "/etc/profile.d/autojump.sh"
+[ -f "/etc/profile.d/z.sh" ] && . "/etc/profile.d/z.sh"
