@@ -20,6 +20,7 @@ alias msmtp='msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc'
 alias motion='motion -c $XDG_CONFIG_HOME/motion/motion.conf'
 alias cclive='cclive -f best'
 alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
+alias vi='vim'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
