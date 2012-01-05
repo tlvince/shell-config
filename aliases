@@ -30,6 +30,7 @@ alias pinstall='pacman -S'
 alias uninstall='pacman -Rsn'
 alias funinstall='pacman -Rsndd'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
+alias aur='aurget -S --deps'
 
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
