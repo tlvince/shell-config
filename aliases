@@ -18,7 +18,7 @@ alias offlineimap='offlineimap -c ~/.config/offlineimap/offlineimap.conf -o'
 alias visudo='sudo EDITOR=vim visudo'
 alias msmtp='msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc'
 alias motion='motion -c $XDG_CONFIG_HOME/motion/motion.conf'
-alias cclive='cclive -f best'
+alias quvi='quvi -f best'
 alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
 alias vi='vim'
 
