@@ -47,6 +47,7 @@ alias ted='logvid -f "~/dwn/video/ted-top.m3u"'
 alias webcam='mplayer tv:// -tv device=/dev/video0 -vf screenshot'
 alias py='python'
 alias cwd='pwd | xsel'
+alias sleep='echo -n mem | sudo tee /sys/power/state'
 
 # Single character {{{2
 # j: reserved for autojump
