@@ -25,7 +25,7 @@ alias vi='vim'
 # Package management {{{1
 alias repkg='makepkg -efi'
 alias pacman='sudo pacman'
-alias update='pacman -Syu; sh ~/src/bash/post-update.sh'
+alias update='pacman -Syu; sh ~/src/shell/post-update.sh'
 alias pinstall='pacman -S'
 alias uninstall='pacman -Rsn'
 alias funinstall='pacman -Rsndd'
