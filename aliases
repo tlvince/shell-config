@@ -20,7 +20,6 @@ alias msmtp='msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc'
 alias motion='motion -c $XDG_CONFIG_HOME/motion/motion.conf'
 alias quvi='quvi -f best'
 alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
-alias vi='vim'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
@@ -53,7 +52,7 @@ alias sleep='echo -n mem | sudo tee /sys/power/state'
 # j: reserved for autojump
 alias l='ls -lA'
 alias g='git'
-alias m='mutt -z'
+alias m='mutt'
 alias n='newsbeuter -q'
 alias v='viminfo="$XDG_CACHE_HOME/vim/viminfo" v'
 alias t='dict -d moby-thes'
