@@ -22,6 +22,7 @@ alias quvi='quvi -f best'
 alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
 alias diff='diff -u'
 alias less='less -Ri'
+alias git='hub'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
