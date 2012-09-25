@@ -26,12 +26,9 @@ alias git='hub'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
-alias pacman='sudo pacman'
-alias update='pacman -Syu; sh ~/src/shell/post-update.sh'
-alias pinstall='pacman -S'
-alias uninstall='pacman -Rsn'
-alias funinstall='pacman -Rsndd'
-alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
+alias pinstall='sudo pacman -S'
+alias uninstall='sudo pacman -Rsn'
+alias funinstall='sudo pacman -Rsndd'
 alias aur='raury'
 
 # Shortcuts {{{1
