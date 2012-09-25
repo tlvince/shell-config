@@ -5,4 +5,9 @@
 # Imports. {{{1
 . "$XDG_CONFIG_HOME/shell/aliases"
 . "$XDG_CONFIG_HOME/shell/exports"
-[ -f "/etc/profile.d/z.sh" ] && . "/etc/profile.d/z.sh"
+
+z="/etc/profile.d/z.sh"
+[ -f "$z" ] && . "$z"
+
+solarized="$XDG_CONFIG_HOME/dircolors/solarized-dark"
+[ -f "$solarized" ] && . "$solarized"
