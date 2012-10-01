@@ -48,7 +48,6 @@ alias py='python'
 alias cwd='pwd | xsel'
 alias sleep='echo -n mem | sudo tee /sys/power/state'
 alias th='dict -d moby-thes'
-alias open='xdg-open'
 
 # Single character {{{2
 # j: reserved for autojump
