@@ -23,7 +23,7 @@ if [[ -z "$DISPLAY" ]]; then
     case $(tty) in
         /dev/tty1)
             # Fix login security hole (^c)
-            xinit -- /usr/bin/X -nolisten tcp &!
+            xinit "$XDG_CONFIG_HOME/xorg/xinitrc" -- /usr/bin/X -nolisten tcp &!
             logout
         ;;
         /dev/tty2)
