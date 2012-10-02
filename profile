@@ -26,7 +26,7 @@ if [[ -z "$DISPLAY" ]]; then
             xinit "$XDG_CONFIG_HOME/xorg/xinitrc" -- /usr/bin/X -nolisten tcp &!
             logout
         ;;
-        /dev/tty2)
+        /dev/tty3)
             tmux
             logout
         ;;
