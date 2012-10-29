@@ -9,5 +9,5 @@
 z="/etc/profile.d/z.sh"
 [ -f "$z" ] && . "$z"
 
-solarized="$XDG_CONFIG_HOME/dircolors/solarized-dark"
-[ -f "$solarized" ] && . "$solarized"
+dircolors="$XDG_CONFIG_HOME/dircolors/dircolors"
+[ -f "$dircolors" ] && . "$dircolors"
