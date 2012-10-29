@@ -18,6 +18,7 @@ export _Z_DATA="$XDG_DATA_HOME/z/datafile"
 export TERMINAL="urxvtc"
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;32"
+export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS --ignore-case"
 
 # History {{{1
 export HISTCONTROL="erasedups"
