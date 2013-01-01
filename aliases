@@ -25,6 +25,7 @@ alias git='hub'
 alias selfspy.py='selfspy.py --data-dir $XDG_DATA_HOME/selfspy'
 alias selfstats.py='selfstats.py --data-dir $XDG_DATA_HOME/selfspy'
 alias vi='vim'
+alias iotop='sudo iotop -oa'
 
 # Package management {{{1
 alias repkg='makepkg -efi'
@@ -51,10 +52,16 @@ alias cwd='pwd | xsel'
 alias sleep='echo -n mem | sudo tee /sys/power/state'
 alias th='dict -d moby-thes'
 
+# Compression {{{2
+alias 7z9='7z a -mx9 -mmt -ms'
+alias 7zt='7z a -m0=PPMd -ms'
+alias 7zp='7z9 -mhe'
+
 # Single character {{{2
 alias d='dict -d wn'
+alias e='~/src/shell/scripts/vim-server.dash'
 alias g='git'
-alias i='idea'
+alias i='offlineimap -f INBOX'
 # j: reserved for autojump
 alias l='ls -lA'
 alias m='mutt'
