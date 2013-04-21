@@ -21,14 +21,13 @@ alias motion='motion -c $XDG_CONFIG_HOME/motion/motion.conf'
 alias quvi='quvi -f best'
 alias irssi='irssi --home $XDG_CONFIG_HOME/irssi'
 alias diff='diff -u'
-alias git='hub'
 alias selfspy.py='selfspy.py --data-dir $XDG_DATA_HOME/selfspy'
 alias selfstats.py='selfstats.py --data-dir $XDG_DATA_HOME/selfspy'
 alias vi='vim'
 alias iotop='sudo iotop -oa'
 
 # Package management {{{1
-alias repkg='makepkg -efi'
+alias repkg='makepkg -efis'
 alias pinstall='sudo pacman -S'
 alias uninstall='sudo pacman -Rsn'
 alias funinstall='sudo pacman -Rsndd'
@@ -51,6 +50,7 @@ alias py='python'
 alias cwd='pwd | xsel'
 alias sleep='echo -n mem | sudo tee /sys/power/state'
 alias th='dict -d moby-thes'
+alias bob='php artisan bob::build'
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
