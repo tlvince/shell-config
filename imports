@@ -3,11 +3,11 @@
 # vim: set fdm=marker
 
 # Imports. {{{1
-. "$XDG_CONFIG_HOME/shell/aliases"
-. "$XDG_CONFIG_HOME/shell/exports"
+source "$XDG_CONFIG_HOME/shell/aliases"
+source "$XDG_CONFIG_HOME/shell/exports"
 
 z="/etc/profile.d/z.sh"
-[ -f "$z" ] && . "$z"
+[ -f "$z" ] && source "$z"
 
 dircolors="$XDG_CONFIG_HOME/dircolors/dircolors"
-[ -f "$dircolors" ] && . "$dircolors"
+[ -f "$dircolors" ] && source "$dircolors"
