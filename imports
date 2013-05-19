@@ -11,3 +11,5 @@ z="/etc/profile.d/z.sh"
 
 dircolors="$XDG_CONFIG_HOME/dircolors/dircolors"
 [ -f "$dircolors" ] && source "$dircolors"
+
+source "$XDG_CONFIG_HOME/shell/platform"
