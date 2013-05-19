@@ -26,13 +26,6 @@ alias selfstats.py='selfstats.py --data-dir $XDG_DATA_HOME/selfspy'
 alias vi='vim'
 alias iotop='sudo iotop -oa'
 
-# Package management {{{1
-alias repkg='makepkg -efis'
-alias pinstall='sudo pacman -S'
-alias uninstall='sudo pacman -Rsn'
-alias funinstall='sudo pacman -Rsndd'
-alias aur='raury'
-
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
 alias mpdlocal='/usr/bin/mpd "$XDG_CONFIG_HOME/mpd/local.conf" && \
