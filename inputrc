@@ -1,13 +1,15 @@
 set editing-mode vi
+
+# History with up/down keys
 $if mode=vi
-    set keymap vi-command
-    "\e[A": history-search-backward
-    "\e[B": history-search-forward
-    set keymap vi-insert
-    "\e[A": history-search-backward
-    "\e[B": history-search-forward
-    "\C-l": clear-screen
+  set keymap vi-command
+  "\e[A": history-search-backward
+  "\e[B": history-search-forward
+  set keymap vi-insert
+  "\e[A": history-search-backward
+  "\e[B": history-search-forward
+  "\C-l": clear-screen
 $else
-    "\e[A": history-search-backward
-    "\e[B": history-search-forward
+  "\e[A": history-search-backward
+  "\e[B": history-search-forward
 $endif
