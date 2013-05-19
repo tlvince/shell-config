@@ -7,16 +7,6 @@ their corresponding sub-directories.
 
 Note, `XDG_{DATA,CACHE,CONFIG}_HOME` need to be set for this to work.
 
-## Usage
-
-Pick a shell to use (Bash, Zsh etc.), then:
-
-### Zsh
-
-1. Link the fuzzy match global ignore:
-
-    ln -s "$XDG_CONFIG_HOME/shell/zsh/fuzzy-match-global-ignore" "$HOME/.global.fuzzy-match-ignore"
-
 ## Author
 
 Copyright 2010-2013 Tom Vincent <http://tlvince.com/contact>
