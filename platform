@@ -1,0 +1,12 @@
+#!/bin/sh
+# Platform-specific shell configuration bootstrap.
+# © 2013 Tom Vincent <http://tlvince.com/contact>
+
+# OS X
+[ $(uname) = "Darwin" ] && source "$XDG_CONFIG_HOME/osx/shell.sh"
+
+# systemd/freedesktop spec
+os="/etc/os-release"
+[ -f "$os" ] && {
+  grep -q "ID=arch" "$os" && source "$XDG_CONFIG_HOME/arch/shell.sh"
+}
