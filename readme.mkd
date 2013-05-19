@@ -5,7 +5,10 @@ Shell configuration files.
 Files that all shells can use reside in the root. Shell-specific settings are in
 their corresponding sub-directories.
 
-Note, `XDG_{DATA,CACHE,CONFIG}_HOME` need to be set for this to work.
+## Usage
+
+0. Make sure `XDG_{DATA,CACHE,CONFIG}_HOME` are set
+1. `ln -s "$XDG_CONFIG_HOME/shell/inputrc" "$HOME/.inputrc"`
 
 ## Author
 
