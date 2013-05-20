@@ -6,7 +6,6 @@
 export PATH="$HOME/bin:$PATH"
 export EDITOR="vim"
 export VISUAL="vim"
-export BROWSER="chromium"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export PAGER="less"
 export READNULLCMD="$PAGER"   # Zsh's "< file" built-in pager
