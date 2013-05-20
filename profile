@@ -5,12 +5,13 @@
 have() { which "$1" &>/dev/null; }
 
 # OS X
-[ $(uname) = "Darwin" ] && source "$XDG_CONFIG_HOME/osx/profile.sh"
+[ $(uname) = "Darwin" ] && source \
+  "$HOME/Library/Application Support/osx/profile.sh"
 
 # systemd/freedesktop spec
 os="/etc/os-release"
 [ -f "$os" ] && {
-  grep -q "ID=arch" "$os" && source "$XDG_CONFIG_HOME/arch/profile.sh"
+  grep -q "ID=arch" "$os" && source "$HOME/.config/arch/profile.sh"
 }
 
 # Default environment
@@ -19,7 +20,6 @@ os="/etc/os-release"
 [ $XDG_DATA_HOME ]   || export XDG_DATA_HOME="$HOME/.local/share"
 
 # Start tmux
-[ -n $SSH_TTY ] && have tmux && [ -z $TMUX ] && {
-  tmux has 2>/dev/null && tmux attach || tmux new
-  logout
+[ -n $SSH_TTY ] && [ -z $TMUX ] && have tmux && {
+  tmux has 2>/dev/null && tmux attach || tmux new &
 }
