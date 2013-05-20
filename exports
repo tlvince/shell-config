@@ -3,7 +3,7 @@
 # vim: set fdm=marker:
 
 # Environment {{{1
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="vim"
 export VISUAL="vim"
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
