@@ -3,6 +3,6 @@
 # vim: ft=sh fdm=marker
 
 # Create directory and enter it. {{{1
-function mdc() {
+function mkc() {
   mkdir -p "$@" && cd "$1"
 }
