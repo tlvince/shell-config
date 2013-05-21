@@ -10,4 +10,6 @@ source "$XDG_CONFIG_HOME/shell/functions"
 dircolors="$XDG_CONFIG_HOME/dircolors/dircolors"
 [ -f "$dircolors" ] && source "$dircolors"
 
+[ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
+
 source "$XDG_CONFIG_HOME/shell/platform"
