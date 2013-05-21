@@ -5,6 +5,7 @@
 # Imports. {{{1
 source "$XDG_CONFIG_HOME/shell/aliases"
 source "$XDG_CONFIG_HOME/shell/exports"
+source "$XDG_CONFIG_HOME/shell/functions"
 
 dircolors="$XDG_CONFIG_HOME/dircolors/dircolors"
 [ -f "$dircolors" ] && source "$dircolors"

@@ -1,0 +1,8 @@
+# Shell functions. {{{1
+# © 2013 Tom Vincent <http://tlvince.com/contact>
+# vim: ft=sh fdm=marker
+
+# Create directory and enter it. {{{1
+function mdc() {
+  mkdir -p "$@" && cd "$1"
+}
