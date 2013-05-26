@@ -6,3 +6,8 @@
 function mkc() {
   mkdir -p "$@" && cd "$1"
 }
+
+# Spellchecker using aspell. {{{1
+function spell() {
+  echo "$@" | aspell -a | grep -v "^@(#)"
+}
