@@ -21,5 +21,5 @@ os="/etc/os-release"
 
 # Start tmux
 [ -n $SSH_TTY ] && [ -z $TMUX ] && have tmux && {
-  tmux has 2>/dev/null && tmux attach || tmux new &
+  tmux has 2>/dev/null && exec tmux attach || exec tmux new
 }
