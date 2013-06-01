@@ -19,6 +19,9 @@ os="/etc/os-release"
 [ $XDG_CACHE_HOME ]  || export XDG_CACHE_HOME="$HOME/.cache"
 [ $XDG_DATA_HOME ]   || export XDG_DATA_HOME="$HOME/.local/share"
 
+# Start {ssh,gpg}-agent
+have keychain && eval $(keychain --eval --quiet)
+
 # Start tmux
 [ -n $SSH_TTY ] && [ -z $TMUX ] && have tmux && {
   tmux has 2>/dev/null && exec tmux attach || exec tmux new
