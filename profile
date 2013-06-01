@@ -1,6 +1,6 @@
 # profile: sourced by the login shell. {{{1
 # Copyright 2009-2013 Tom Vincent <http://tlvince.com/contact/>
-# vim: set fdm=marker
+# vim: set fdm=marker ft=sh
 
 have() { which "$1" &>/dev/null; }
 
