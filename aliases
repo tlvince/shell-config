@@ -70,3 +70,6 @@ alias s='spell'
 alias t='todo'
 alias u='urxvtc'
 alias v='viminfo="$XDG_CACHE_HOME/vim/viminfo" v'
+
+# Hosts {{{2
+alias muddyirc='autossh -f -NL 6668:localhost:6668 muddy'
