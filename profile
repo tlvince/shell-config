@@ -4,15 +4,13 @@
 
 have() { which "$1" &>/dev/null; }
 
-# OS X
-[ $(uname) = "Darwin" ] && source \
-  "$HOME/Library/Application Support/osx/profile.sh"
-
-# systemd/freedesktop spec
+# Determine platform
 os="/etc/os-release"
-[ -f "$os" ] && {
-  grep -q "ID=arch" "$os" && source "$HOME/.config/arch/profile.sh"
-}
+if [ $(uname) = "Darwin" ]; then
+  source "$HOME/Library/Application Support/osx/profile.sh"
+elif [ -f "$os" ] && grep -q "ID=arch" "$os"; then
+  source "$HOME/.config/arch/profile.sh"
+fi
 
 # Default environment
 [ $XDG_CONFIG_HOME ] || export XDG_CONFIG_HOME="$HOME/.config"
