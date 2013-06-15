@@ -7,8 +7,10 @@ have() { which "$1" &>/dev/null; }
 # Determine platform
 os="/etc/os-release"
 if [ $(uname) = "Darwin" ]; then
+  export PLATFORM="Darwin"
   source "$HOME/Library/Application Support/osx/profile.sh"
 elif [ -f "$os" ] && grep -q "ID=arch" "$os"; then
+  export PLATFORM="Arch"
   source "$HOME/.config/arch/profile.sh"
 fi
 
