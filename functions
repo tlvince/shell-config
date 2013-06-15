@@ -3,11 +3,11 @@
 # vim: ft=sh fdm=marker
 
 # Create directory and enter it. {{{1
-function mkc() {
+mkc() {
   mkdir -p "$@" && cd "$1"
 }
 
 # Spellchecker using aspell. {{{1
-function spell() {
+spell() {
   echo "$@" | aspell -a | grep -v "^@(#)"
 }
