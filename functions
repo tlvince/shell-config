@@ -9,5 +9,5 @@ mkc() {
 
 # Spellchecker using aspell. {{{1
 spell() {
-  echo "$@" | aspell -a | grep -v "^@(#)"
+  echo "$@" | aspell -a | egrep -v "^@|^$"
 }
