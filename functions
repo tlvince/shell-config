@@ -2,7 +2,7 @@
 # © 2013 Tom Vincent <http://tlvince.com/contact>
 # vim: ft=sh fdm=marker
 
-# Create directory and enter it. {{{1
+# Create the directories as named operands and enter the first. {{{1
 mkc() {
   mkdir -p "$@" && cd "$1"
 }
