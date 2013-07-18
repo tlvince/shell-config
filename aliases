@@ -61,7 +61,7 @@ alias 7zp='7z9 -mhe'
 alias d='dict -d wn'
 alias e='~/src/shell/scripts/vim-server.dash'
 alias g='git'
-alias i='offlineimap -f INBOX'
+alias i='offlineimap -f INBOX && incount'
 # j: reserved for autojump
 alias l='ls -lA'
 alias m='mutt'
