@@ -19,6 +19,7 @@ export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS --ignore-case"
 export LEDGER_FILE="$XDG_DATA_HOME/ledger/default.ldg"
 export MSMTP_QUEUEDIR="$XDG_DATA_HOME/msmtp"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
+export BOOKMARKS="$XDG_DATA_HOME/bookmarks"
 
 # History {{{1
 export HISTCONTROL="erasedups"
