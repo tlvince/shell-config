@@ -58,6 +58,7 @@ alias 7zt='7z a -m0=PPMd -ms'
 alias 7zp='7z9 -mhe'
 
 # Single character {{{2
+alias b='bookmark'
 alias d='dict -d wn'
 alias e='~/src/shell/scripts/vim-server.dash'
 alias g='git'
