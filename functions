@@ -11,3 +11,13 @@ mkc() {
 spell() {
   echo "$@" | aspell -a | egrep -v "^@|^$"
 }
+
+# Navigate $1 directories up. {{{1
+up() {
+  local path i
+  [ $1 ] || set 1
+  for ((i = 0; i < $1; i++)); do
+    path+=../
+  done
+  cd "$path"
+}
