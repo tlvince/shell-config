@@ -17,7 +17,7 @@ up() {
   local path i
   [ $1 ] || set 1
   for ((i = 0; i < $1; i++)); do
-    path+=../
+    path="$path../"
   done
   cd "$path"
 }
