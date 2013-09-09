@@ -6,6 +6,7 @@
 source "$XDG_CONFIG_HOME/shell/aliases"
 source "$XDG_CONFIG_HOME/shell/exports"
 source "$XDG_CONFIG_HOME/shell/functions"
+source "$XDG_CONFIG_HOME/shell/vendor/chriskempson/base16-shell/base16-eighties.dark.sh"
 
 dircolors="$XDG_CONFIG_HOME/dircolors/dircolors"
 [ -f "$dircolors" ] && source "$dircolors"
