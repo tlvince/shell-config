@@ -65,7 +65,7 @@ alias b='bookmark'
 alias d='dict -d wn'
 alias e='~/src/shell/scripts/vim-server.dash'
 alias g='git'
-alias i='offlineimap -f INBOX && incount'
+alias i='offlineimap -f INBOX,Inbox && incount'
 # j: reserved for autojump
 alias l='ls -lA'
 alias m='mutt'
