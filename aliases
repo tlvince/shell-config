@@ -53,6 +53,7 @@ alias mk='mkdir -p'
 alias rd='rmdir'
 alias serve='python -m SimpleHTTPServer'
 alias quviplay='quvi --exec "$PLAYER %u"'
+alias quvidown='quvi --exec "aria2c %u"'
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
