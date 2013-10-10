@@ -29,6 +29,7 @@ alias newsbeuter='newsbeuter -C $XDG_CONFIG_HOME/newsbeuter/config -c $XDG_CACHE
 alias mysql='mysql --pager="less -nSFX"'
 alias autossh='autossh -M 0'
 alias podbeuter='podbeuter -C $XDG_CONFIG_HOME/newsbeuter/config -q $XDG_DATA_HOME/newsbeuter/queue'
+alias git="hub"
 
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
@@ -46,7 +47,6 @@ alias ted='logvid -f "~/dwn/video/ted-top.m3u"'
 alias webcam='mplayer tv:// -tv device=/dev/video0 -vf screenshot'
 alias py='python'
 alias cwd='pwd | tmux load-buffer -'
-alias sleep='echo -n mem | sudo tee /sys/power/state'
 alias th='dict -d moby-thes'
 alias bob='php artisan bob::build'
 alias mk='mkdir -p'
