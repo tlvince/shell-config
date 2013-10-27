@@ -1,0 +1,10 @@
+# imports: source files here that should be imported by all shells. {{{1
+# Copyright 2011-2013 Tom Vincent <http://tlvince.com/contact>
+# vim: set fdm=marker
+
+# Imports. {{{1
+source "$HOME/.shell/aliases"
+source "$HOME/.shell/exports"
+source "$HOME/.shell/functions"
+source "$HOME/.shell/vendor/chriskempson/base16-shell/base16-eighties.dark.sh"
+source "$HOME/.shell/platform"

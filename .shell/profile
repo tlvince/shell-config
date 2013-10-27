@@ -8,16 +8,11 @@ have() { which "$1" &>/dev/null; }
 os="/etc/os-release"
 if [ $(uname) = "Darwin" ]; then
   export PLATFORM="Darwin"
-  source "$HOME/Library/Application Support/osx/profile.sh"
+  source "$HOME/.osx/profile.sh"
 elif [ -f "$os" ] && grep -q "ID=arch" "$os"; then
   export PLATFORM="Arch"
-  source "$HOME/.config/arch/profile.sh"
+  source "$HOME/.arch/profile.sh"
 fi
-
-# Default environment
-[ $XDG_CONFIG_HOME ] || export XDG_CONFIG_HOME="$HOME/.config"
-[ $XDG_CACHE_HOME ]  || export XDG_CACHE_HOME="$HOME/.cache"
-[ $XDG_DATA_HOME ]   || export XDG_DATA_HOME="$HOME/.local/share"
 
 # Start {ssh,gpg}-agent
 have keychain && eval $(keychain --eval --quiet)

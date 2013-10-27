@@ -6,20 +6,14 @@
 export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="vim"
 export VISUAL="vim"
-export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export PAGER="less"
 export READNULLCMD="$PAGER"   # Zsh's "< file" built-in pager
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" # Digikam/QGtkStyle
 export _Z_CMD="j"
-export _Z_DATA="$XDG_DATA_HOME/z/datafile"
 export TERMINAL="urxvtc"
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;32"
 export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS --ignore-case"
-export LEDGER_FILE="$XDG_DATA_HOME/ledger/default.ldg"
-export MSMTP_QUEUEDIR="$XDG_DATA_HOME/msmtp"
-export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
-export BOOKMARKS_DIR="$XDG_DATA_HOME/bookmarks"
 export PLAYER="mpv"
 
 # History {{{1
@@ -27,5 +21,3 @@ export HISTCONTROL="erasedups"
 export HISTSIZE="10000"
 export SAVEHIST="10000"
 export HISTFILESIZE="10000"
-export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/history"
-export LESSHISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/lesshst"

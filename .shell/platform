@@ -4,6 +4,6 @@
 
 # As determined by profile
 case "$PLATFORM" in
-  "Darwin") source "$XDG_CONFIG_HOME/osx/shell.sh";;
-    "Arch") source "$XDG_CONFIG_HOME/arch/shell.sh";;
+  "Darwin") source "$HOME/.osx/shell.sh";;
+    "Arch") source "$HOME/.arch/shell.sh";;
 esac

@@ -2,11 +2,6 @@
 
 Portable shell configuration files.
 
-## Usage
-
-0. Make sure `XDG_{DATA,CACHE,CONFIG}_HOME` are set
-1. `ln -s "$XDG_CONFIG_HOME/shell/inputrc" "$HOME/.inputrc"`
-
 ## Author
 
 Copyright 2010-2013 Tom Vincent <http://tlvince.com/contact>
