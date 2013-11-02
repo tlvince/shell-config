@@ -6,4 +6,3 @@
 source "$HOME/.shell/aliases"
 source "$HOME/.shell/exports"
 source "$HOME/.shell/functions"
-source "$HOME/.shell/vendor/chriskempson/base16-shell/base16-eighties.dark.sh"
