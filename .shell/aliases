@@ -44,6 +44,7 @@ alias serve='python -m SimpleHTTPServer'
 alias quviplay='quvi --exec "$PLAYER %u"'
 alias quvidown='quvi --exec "aria2c %u"'
 alias ll="l | less"
+alias of="offlineimap"
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
@@ -55,7 +56,6 @@ alias b='bookmark'
 alias d='dict -d wn'
 alias e='~/src/shell/scripts/vim-server.dash'
 alias g='git'
-alias i='offlineimap -f INBOX,Inbox && incount'
 # j: reserved for autojump
 alias l='ls -lA'
 alias m='mutt'
