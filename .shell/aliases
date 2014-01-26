@@ -65,7 +65,6 @@ alias n='newsbeuter'
 alias o='open'
 alias p='podbeuter'
 alias s='spell'
-alias t='todo'
 alias u='urxvtc'
 alias v='vim'
 
