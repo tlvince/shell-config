@@ -23,6 +23,7 @@ alias mysql='mysql --pager="less -nSFX"'
 alias autossh='autossh -M 0'
 alias bitlbee='bitlbee -c $HOME/.bitlbee/bitlbee.conf'
 alias update-adblock='GIST_ID="8541912" update-adblock'
+alias ag='ag --pager less --smart-case'
 
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
