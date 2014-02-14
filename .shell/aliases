@@ -48,6 +48,8 @@ alias quviplay='quvi --exec "$PLAYER %u"'
 alias quvidown='quvi --exec "aria2c %u"'
 alias ll="l | less"
 alias of="offlineimap"
+alias groovesalad='$PLAYER --playlist http://somafm.com/groovesalad.pls'
+alias radio6='get_iplayer --type liveradio --stream 80102 | $PLAYER -'
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
