@@ -27,7 +27,7 @@ alias ag='ag --pager less --smart-case'
 
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
-alias myip='curl --silent http://ip.tlvince.com'
+alias myip='curl --silent https://ip.tlvince.com'
 alias acp='rsync -a --partial-dir=".rsync-partial" --progress'
 alias sudu='sudo -iu'
 alias pu='pushd'
