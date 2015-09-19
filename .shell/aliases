@@ -48,6 +48,8 @@ alias of='offlineimap'
 alias groovesalad='$PLAYER --playlist http://somafm.com/groovesalad.pls'
 alias radio6='get_iplayer --type liveradio --stream 80102 | $PLAYER -'
 alias yt='youtube-dl'
+alias mpva='mpv --no-video'
+alias mpvn='mpv --no-ytdl'
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
@@ -62,7 +64,6 @@ alias g='git'
 # j: reserved for autojump
 alias l='ls -lA'
 alias m='mutt'
-alias n='newsbeuter'
 alias o='open'
 alias p='podbeuter'
 alias s='spell'
