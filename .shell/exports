@@ -15,6 +15,9 @@ export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;32"
 export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS --ignore-case"
 export PLAYER="mpv"
+export FZF_DEFAULT_COMMAND='(git ls-tree -r --name-only HEAD || ag -l -g "") 2>/dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS="--no-mouse --cycle"
 
 # History {{{1
 export HISTCONTROL="erasedups"
