@@ -21,3 +21,9 @@ up() {
   done
   cd "$path"
 }
+
+# Play a SomaFM stream. {{{1
+somafm() {
+  1=${1:-"groovesalad"}
+  "$PLAYER" --playlist "http://somafm.com/$1.pls"
+}
