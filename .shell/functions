@@ -27,3 +27,18 @@ somafm() {
   1=${1:-"groovesalad"}
   "$PLAYER" --playlist "http://somafm.com/$1.pls"
 }
+
+passGenerate() {
+  [ $1 ] || { echo "$0 <name> [length]"; return; }
+  2=${2:-100}
+  pass generate --clip "$@"
+}
+
+passCopyTail() {
+  pass "$1" | tail -n1 | pbcopy
+}
+
+toGif() {
+  [[ "$1" ]] || { echo "toGif <file.mp4>"; return 1; }
+  ffmpeg -i "$1" -r 24 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 -layers Optimize - "${1%.*}.gif"
+}

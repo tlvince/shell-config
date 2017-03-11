@@ -50,7 +50,9 @@ alias yt='youtube-dl'
 alias mpva='mpv --ytdl-format=251/171'
 alias mpvn='mpv --no-ytdl'
 alias pc='pass -c'
-alias pg='pass generate -c'
+alias pg='passGenerate'
+alias pct='passCopyTail'
+alias adbss="adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g'"
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
