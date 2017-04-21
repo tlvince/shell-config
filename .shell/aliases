@@ -6,8 +6,6 @@ alias ls='ls -hG'
 alias df='df -h'
 alias du='du -hc'
 alias htop='htop -u $(whoami)'
-alias poweroff='sudo poweroff'
-alias reboot='sudo kxreboot'
 alias s2ram='sudo s2ram -f'
 alias s2disk='sudo s2disk'
 alias net-profile='sudo net-profile'
@@ -24,6 +22,8 @@ alias autossh='autossh -M 0'
 alias bitlbee='bitlbee -c $HOME/.bitlbee/bitlbee.conf'
 alias update-adblock='GIST_ID="8541912" update-adblock'
 alias ag='ag --pager less --smart-case'
+alias grep='grep --color=auto'
+alias powertop='sudo powertop'
 
 # Shortcuts {{{1
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS"'
@@ -52,7 +52,7 @@ alias mpvn='mpv --no-ytdl'
 alias pc='pass -c'
 alias pg='passGenerate'
 alias pct='passCopyTail'
-alias adbss="adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g'"
+alias adbss="adb shell screencap -p > /tmp/android-screenshot-\$(date +%s).png"
 
 # Compression {{{2
 alias 7z9='7z a -mx9 -mmt -ms'
