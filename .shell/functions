@@ -35,10 +35,21 @@ passGenerate() {
 }
 
 passCopyTail() {
-  pass "$1" | tail -n1 | pbcopy
+  pass "$1" | tail -n1 | xclip -selection clipboard
 }
 
 toGif() {
   [[ "$1" ]] || { echo "toGif <file.mp4>"; return 1; }
   ffmpeg -i "$1" -r 24 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 -layers Optimize - "${1%.*}.gif"
+}
+
+# https://bbs.archlinux.org/viewtopic.php?pid=1681138#p1681138
+allsearch() {
+  pacman -Ss "$@"
+  aursearch "$@"
+}
+
+aur() {
+  aur=("${(@f)$(printf '%s\n' "$@" | aursift)}")
+  [[ ${aur[@]} ]] && aursync "${aur[@]}" && sudo pacman -Syu "$@"
 }
