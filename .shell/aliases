@@ -2,7 +2,7 @@
 # Copyright 2010-12 Tom Vincent <http://tlvince.com/contact/>
 # vim: set fdm=marker:
 # Overrides {{{1
-alias ls='ls -hG'
+alias ls='ls --color=auto --human-readable --no-group'
 alias df='df -h'
 alias du='du -hc'
 alias htop='htop -u $(whoami)'
@@ -13,7 +13,7 @@ alias free='free -m'
 alias iftop='sudo iftop -i wlan0'
 alias offlineimap='gpg -d $HOME/.gnupg/unlock.gpg && offlineimap -o'
 alias visudo='sudo EDITOR=nvim visudo'
-alias diff='diff -u'
+alias diff='diff --color=auto --unified'
 alias vi='nvim'
 alias vim='nvim'
 alias iotop='sudo iotop -oa'
