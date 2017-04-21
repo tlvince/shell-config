@@ -3,7 +3,6 @@
 # vim: set fdm=marker:
 
 # Environment {{{1
-export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export PAGER="less"
@@ -11,7 +10,6 @@ export READNULLCMD="$PAGER"   # Zsh's "< file" built-in pager
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" # Digikam/QGtkStyle
 export _Z_CMD="j"
 export TERMINAL="urxvtc"
-export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;32"
 export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS --ignore-case"
 export PLAYER="mpv"
