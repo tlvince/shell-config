@@ -64,6 +64,7 @@ alias b='bookmark'
 alias d='dict -d wn'
 alias e='~/src/shell/scripts/vim-server.dash'
 alias g='git'
+alias h='hub'
 # j: reserved for autojump
 alias l='ls -lA'
 alias m='mutt'
