@@ -17,8 +17,6 @@ fi
 # Start {ssh,gpg}-agent
 have keychain && eval $(keychain --eval --quiet)
 
-source "$HOME/.shell/vendor/chriskempson/base16-shell/base16-eighties.dark.sh"
-
 # Start tmux
 [ -n $SSH_TTY ] && [ -z $TMUX ] && have tmux && {
   tmux has 2>/dev/null && exec tmux attach || exec tmux new
