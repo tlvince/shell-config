@@ -5,19 +5,22 @@
 # Environment {{{1
 export EDITOR="nvim"
 export VISUAL="nvim"
+export DIFFPROG="nvim -d"
 export PAGER="less"
 export READNULLCMD="$PAGER"   # Zsh's "< file" built-in pager
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" # Digikam/QGtkStyle
 export _Z_CMD="j"
-export TERMINAL="urxvtc"
+export TERMINAL="gnome-terminal"
 export GREP_COLOR="1;32"
 export LESS="--quit-if-one-screen --no-init --RAW-CONTROL-CHARS --ignore-case"
 export PLAYER="mpv"
 export FZF_STOCK_COMMAND="find . -path '*/\.*' -prune -o -type f -print -o -type l -print | sed 's/^..//'"
+export FZF_STOCK_ALT_C_COMMAND="find -L . -mindepth 1 \\( -path '*/\\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \\) -prune -o -type d -print 2> /dev/null | cut -b3-"
 export FZF_DEFAULT_COMMAND="(git ls-files --cached --exclude-standard --others || fd --type file || "$FZF_STOCK_COMMAND") 2>/dev/null"
-export FZF_ALT_C_COMMAND="(fd --type directory || "$FZF_STOCK_COMMAND") 2>/dev/null"
+export FZF_ALT_C_COMMAND="(git ls-tree -d -r --name-only HEAD || fs --type directory || "$FZF_STOCK_ALT_C_COMMAND") 2>/dev/null"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--no-mouse --cycle"
+export BROWSER="firefox"
 
 # History {{{1
 export HISTCONTROL="erasedups"
