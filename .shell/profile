@@ -4,18 +4,17 @@
 
 have() { which "$1" &>/dev/null; }
 
+[ -f "$HOME/.shell/imports" ] && source "$HOME/.shell/imports"
+
 # Determine platform
 os="/etc/os-release"
 if [ $(uname) = "Darwin" ]; then
   export PLATFORM="Darwin"
-  source "$HOME/.osx/profile.sh"
+  [ -f "$HOME/.osx.profile.sh" ] && source "$HOME/.osx/profile.sh"
 elif [ -f "$os" ] && grep -q "ID=arch" "$os"; then
   export PLATFORM="Arch"
-  source "$HOME/.arch/profile.sh"
+  [ -f "$HOME/.arch/profile.sh" ] && source "$HOME/.arch/profile.sh"
 fi
-
-# Start {ssh,gpg}-agent
-have keychain && eval $(keychain --eval --quiet)
 
 # Start tmux
 [ -n $SSH_TTY ] && [ -z $TMUX ] && have tmux && {
