@@ -49,7 +49,16 @@ allsearch() {
   aursearch "$@"
 }
 
-aur() {
-  aur=("${(@f)$(printf '%s\n' "$@" | aursift)}")
-  [[ ${aur[@]} ]] && aursync "${aur[@]}" && sudo pacman -Syu "$@"
+aws-env() {
+  profile="${1:-default}"
+  region="$(aws configure get region --profile $profile)"
+  export AWS_ACCESS_KEY_ID="$(aws configure get aws_access_key_id --profile $profile)"
+  export AWS_SECRET_ACCESS_KEY="$(aws configure get aws_secret_access_key --profile $profile)"
+  export AWS_REGION="$region"
+  export AWS_DEFAULT_REGION="$region"
+  echo "$profile environment variables exported"
+}
+
+cht() {
+  curl --silent https://cht.sh/$1 | less
 }
