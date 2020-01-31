@@ -10,7 +10,7 @@ have() { which "$1" &>/dev/null; }
 os="/etc/os-release"
 if [ $(uname) = "Darwin" ]; then
   export PLATFORM="Darwin"
-  [ -f "$HOME/.osx.profile.sh" ] && source "$HOME/.osx/profile.sh"
+  [ -f "$HOME/.osx/profile.sh" ] && source "$HOME/.osx/profile.sh"
 elif [ -f "$os" ] && grep -q "ID=arch" "$os"; then
   export PLATFORM="Arch"
   [ -f "$HOME/.arch/profile.sh" ] && source "$HOME/.arch/profile.sh"
